@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}{{ current_user.username }} - {{_("Edit")}}{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>{{_("Edit profile.")}}</h1>
+        <div class="row">
+            <div class="col-md-6">
+                {% include "components/forms/_edit_profile_form.html" %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

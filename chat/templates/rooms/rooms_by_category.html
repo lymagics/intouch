@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% from "macros.html" import pagination_widget %}
+
+{% block title %}{{ category.name }} - {{_("Rooms")}}{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2>{{_("Topic:")}} {{ category.name }}</h2>
+        {% if rooms[0] %}
+            {% include "components/_room_no_category.html" %}
+        {% else %}
+            {% if current_user.is_authenticated %}
+                <h5>{{_("No rooms with such category found. Click")}} <a href="{{ url_for('rooms.create_room') }}">{{_("here")}}</a> {{_("to create.")}}</h5>
+            {% else %}
+                <h5>{{_("No rooms with such category found.")}}</h5>
+            {% endif %}
+        {% endif %}
+    </div>
+    
+{% endblock %}
+
+{% block pagination %}
+    {% if pagination.items %}
+        {{ pagination_widget(pagination, "rooms.room_category", category_id=category.category_id) }}
+    {% endif %}
+{% endblock %}

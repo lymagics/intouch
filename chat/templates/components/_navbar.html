@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{{ url_for('main.index') }}">InTouch</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('main.index') }}">{{_("Explore")}}</a>
+        </li>
+        {% if current_user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('users.user_page', username=current_user.username) }}">{{_("Profile")}}</a>
+            </li>
+        {% endif %}
+        <form action="{{ url_for('main.search') }}" method="get">
+            <input type="text" placeholder="{{_("Search")}}" class="form-control" name="q">
+        </form>
+      </ul>
+      
+      <ul class="navbar-nav ml-auto">
+        {% if not current_user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('auth.login') }}">{{_("Login")}}</a>
+            </li>
+        {% else %}
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                    <img src="{{ current_user.gravatar_url(size=25) }}" alt="..." style="border-radius: 50%;" >
+                    {{_("Account")}}
+                </a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="{{ url_for('auth.change_password') }}">{{_("Change password")}}</a>
+                <a class="dropdown-item" href="{{ url_for('auth.change_email') }}">{{_("Change email")}}</a>
+                <a class="dropdown-item" href="{{ url_for('auth.logout') }}">{{_("Logout")}}</a>
+                </div>
+            </li>
+        {% endif %}
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                {{LANGUAGES[g.locale]}}
+            </a>
+            
+            <div class="dropdown-menu">
+                {% for lang in LANGUAGES %}
+                    {% if lang != g.locale %}
+                    <a class="dropdown-item" href="{{ url_for('main.set_language', lang=lang) }}">{{LANGUAGES[lang]}}</a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </li>
+      </ul>
+    </div>
+</nav>

@@ -1,0 +1,57 @@
+{% macro render_error(field) %}
+    {% if field.errors %}
+        {% for error in field.errors %}
+            <div class="invalid-input">
+                <p>{{ error }}</p>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endmacro %}
+
+{% macro construct_username(username, size) %}
+        <a class="username-link" href="{{ url_for('users.user_page', username=username) }}" style="font-size: {{ size }}px;">@{{ username }}</a>
+{% endmacro %}
+
+{% macro render_participant(participant, size) %}
+    <div class="row">
+        <div class="col-md-2">
+            <div class="rounded-img">
+                <img src="{{ participant.gravatar_url(size=size) }}" alt="...">
+            </div>
+            
+        </div>
+        <div class="col-md-8">
+            {% if participant.name %}<p>{{ participant.name }}<br>{% endif %}{{ construct_username(participant.username, 16) }}</p>
+        </div>
+    </div> 
+{% endmacro %}
+
+{% macro pagination_widget(pagination, endpoint) %}
+<hr>
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        {% if pagination.has_prev %}
+            <li class="page-item"><a class="page-link" href="{{ url_for(endpoint, page=pagination.page-1, **kwargs) }}">{{_("Previous")}}</a></li>
+        {% else %}
+            <li class="page-item disabled"><a class="page-link" href="#">{{_("Previous")}}</a></li>
+        {% endif %}
+
+        {% for p in pagination.iter_pages() %}
+            {% if p %}
+                {% if p == pagination.page %}
+                    <li class="page-item active"><a class="page-link" href="{{ url_for(endpoint, page=p, **kwargs) }}">{{ p }}</a></li>
+                {% else %}
+                    <li class="page-item"><a class="page-link" href="{{ url_for(endpoint, page=p, **kwargs) }}">{{ p }}</a></li>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+
+        {% if pagination.has_next %}
+            <li class="page-item"><a class="page-link" href="{{ url_for(endpoint, page=pagination.page+1, **kwargs) }}">{{_("Next")}}</a></li>
+        {% else %}
+            <li class="page-item disabled"><a class="page-link" href="#">{{_("Next")}}</a></li>
+        {% endif %}
+        
+    </ul>
+</nav>
+{% endmacro %}

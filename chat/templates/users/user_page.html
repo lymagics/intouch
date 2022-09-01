@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% from "macros.html" import construct_username %}
+
+{% block title %}{{ user.username }} - {{_("Profile")}}{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" align="center">
+                <div class="rounded-img">
+                    <img src="{{ user.gravatar_url(size=180) }}" alt="...">
+                </div>
+                {% if user.name %}
+                    <h3>{{ user.name }}</h3>
+                {% endif %}
+                {{ construct_username(user.username, 18) }}
+                {% if current_user == user %}
+                    <a class="btn btn-secondary" href="{{ url_for('users.edit_user') }}">{{_("Edit profile")}}</a>
+                {% endif %}
+            </div>
+
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-12" align="right">
+                        <p style="font-size: 15px;">{{_("Last seen:")}} {{ moment(user.last_seen).fromNow(refresh=True) }}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>{{_("About Me")}}</h4>
+                        {% if user.about_me %}
+                            <p>{{ user.about_me }}</p>
+                        {% else %}
+                            <p>{{_("User didn't specify any information.")}}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% if rooms[0] %}
+                    <h5>{{_("Recently joined rooms:")}}</h5>
+                    <div class="row">
+                        <div class="col-md-12">
+                            {% include "components/_room_desc.html" %}
+                        </div>
+                    </div>
+                {% endif %}
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}

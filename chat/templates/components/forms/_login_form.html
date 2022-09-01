@@ -1,0 +1,15 @@
+{% from "macros.html" import render_error %}
+
+<form method="POST">
+    {{ form.csrf_token }}
+    {{ form.username.label }} {{ form.username(class="form-control") }}
+    {{ render_error(form.username) }}
+
+    {{ form.password.label }} {{ form.password(class="form-control") }}
+    {{ render_error(form.password) }}
+
+    {{ form.remember_me.label }} {{ form.remember_me() }} 
+    
+    {% include "components/forms/_recaptcha.html" %}<br>
+    {{ form.submit(class="btn btn-primary") }}
+</form>

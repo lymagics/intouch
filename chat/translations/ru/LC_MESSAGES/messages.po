@@ -1,0 +1,502 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-08-31 21:09+0300\n"
+"PO-Revision-Date: 2022-08-31 17:48+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: chat/extensions.py:20
+msgid "Please log in to access this page."
+msgstr "Пожалуйста, войдите, чтобы получить доступ к этой странице."
+
+#: chat/auth/forms.py:18 chat/auth/forms.py:35
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: chat/auth/forms.py:19 chat/auth/forms.py:39
+msgid "Password"
+msgstr "Пароль"
+
+#: chat/auth/forms.py:20
+msgid "Remember me"
+msgstr "Запомнить меня"
+
+#: chat/auth/forms.py:22 chat/templates/auth/login.html:3
+#: chat/templates/auth/login.html:7 chat/templates/components/_navbar.html:24
+msgid "Login"
+msgstr "Войти"
+
+#: chat/auth/forms.py:36
+msgid "Username should containonly letters, numbers, dots and underscores."
+msgstr ""
+"Имя пользователя должно содержать только буквы, цифры, точки и символы "
+"подчеркивания."
+
+#: chat/auth/forms.py:38 chat/auth/forms.py:96
+msgid "Email"
+msgstr "Эл. адрес"
+
+#: chat/auth/forms.py:39 chat/auth/forms.py:66 chat/auth/forms.py:114
+msgid "Passwords must match."
+msgstr "Пароли должны совпадать."
+
+#: chat/auth/forms.py:40 chat/auth/forms.py:67 chat/auth/forms.py:115
+msgid "Repeat password"
+msgstr "Повторите пароль"
+
+#: chat/auth/forms.py:42 chat/templates/auth/register.html:3
+#: chat/templates/auth/register.html:7
+msgid "Sign Up"
+msgstr "Зарегистрироваться"
+
+#: chat/auth/forms.py:48
+msgid "User with such username already exists."
+msgstr "Пользователь с таким именем пользователя уже существует."
+
+#: chat/auth/forms.py:53 chat/auth/forms.py:86
+msgid "Email already in use."
+msgstr "Этот электронный адрес уже занят."
+
+#: chat/auth/forms.py:65
+msgid "Old password"
+msgstr "Старый пароль"
+
+#: chat/auth/forms.py:66 chat/auth/forms.py:114
+msgid "New password"
+msgstr "New password"
+
+#: chat/auth/forms.py:69 chat/templates/auth/change_password.html:3
+#: chat/templates/auth/change_password.html:7
+#: chat/templates/components/_navbar.html:33
+msgid "Change password"
+msgstr "Изменить пароль"
+
+#: chat/auth/forms.py:79
+msgid "New email"
+msgstr "Новый email-адрес"
+
+#: chat/auth/forms.py:81 chat/auth/views.py:154
+#: chat/templates/auth/change_email.html:3
+#: chat/templates/auth/change_email.html:7
+#: chat/templates/components/_navbar.html:34
+msgid "Change email"
+msgstr "Сменить имейл"
+
+#: chat/auth/forms.py:98
+msgid "Request reset"
+msgstr "Запросить сброс пароля"
+
+#: chat/auth/forms.py:103
+msgid "Acount with such email not found."
+msgstr "Аккаунт с такой электронной почтой не найден."
+
+#: chat/auth/forms.py:117 chat/auth/views.py:188
+#: chat/templates/auth/reset_password.html:3
+#: chat/templates/auth/reset_password.html:7
+msgid "Reset password"
+msgstr "Сбросить пароль"
+
+#: chat/auth/views.py:42
+msgid "Invalid username or password"
+msgstr "Неправильное имя пользователя или пароль"
+
+#: chat/auth/views.py:64 chat/auth/views.py:117
+msgid "Account confirmation"
+msgstr "Подтверждение аккаунта"
+
+#: chat/auth/views.py:65
+msgid "Thank you for creating account!"
+msgstr "Спасибо за создание аккаунта!"
+
+#: chat/auth/views.py:78
+msgid "You have been logged out."
+msgstr "Вы вышли из системы."
+
+#: chat/auth/views.py:103
+msgid "Your account successfully confirmed!"
+msgstr "Ваш аккаунт успешно подтвержден!"
+
+#: chat/auth/views.py:118
+msgid "An email with confirmation token has been sent to you."
+msgstr "Вам отправлено электронное письмо с токеном подтверждения."
+
+#: chat/auth/views.py:136 chat/auth/views.py:207
+msgid "Your password has been changed."
+msgstr "Ваш пароль был изменен."
+
+#: chat/auth/views.py:138
+msgid "Invalid old password."
+msgstr "Неверный старый пароль."
+
+#: chat/auth/views.py:155
+msgid "Instruction to change email has been sent to you."
+msgstr "Вам отправлена ​​инструкция по смене почты."
+
+#: chat/auth/views.py:169
+msgid "Your email successfully has been changed."
+msgstr "Ваш адрес электронной почты успешно изменен."
+
+#: chat/auth/views.py:171
+msgid "Invalid email change token."
+msgstr "Недействительный токен изменения электронной почты."
+
+#: chat/auth/views.py:189
+msgid "Instruction to reset password has been sent to you."
+msgstr "Вам отправлена ​​инструкция по сбросу пароля."
+
+#: chat/auth/views.py:209
+msgid "Invalid reset token."
+msgstr "Недействительный токен сброса пароля."
+
+#: chat/rooms/forms.py:17
+msgid "Room name"
+msgstr "Название комнаты"
+
+#: chat/rooms/forms.py:18
+msgid "What is this group about?"
+msgstr "О чем эта группа?"
+
+#: chat/rooms/forms.py:19
+msgid "Category"
+msgstr "Категория"
+
+#: chat/rooms/forms.py:20 chat/templates/rooms/create_room.html:3
+msgid "Create room"
+msgstr "Создать комнату"
+
+#: chat/rooms/views.py:28
+msgid "Room successfully created."
+msgstr "Комната успешно создана."
+
+#: chat/rooms/views.py:56
+#, python-format
+msgid "You have joined %(room)s."
+msgstr "Вы присоединились к %(room)s."
+
+#: chat/templates/index.html:9
+msgid "Hello,"
+msgstr "Привет,"
+
+#: chat/templates/index.html:12
+msgid "Want to create your own room?"
+msgstr "Хотите создать свою комнату?"
+
+#: chat/templates/index.html:12
+msgid "Create Room"
+msgstr "Создать комнату"
+
+#: chat/templates/index.html:16
+msgid "Hello, Stranger!"
+msgstr "Привет, незнакомец!"
+
+#: chat/templates/macros.html:34 chat/templates/macros.html:36
+msgid "Previous"
+msgstr "<"
+
+#: chat/templates/macros.html:50 chat/templates/macros.html:52
+msgid "Next"
+msgstr ">"
+
+#: chat/templates/auth/login.html:11
+msgid "Don't have an account? Click"
+msgstr "У вас нет аккаунта? Нажмите"
+
+#: chat/templates/auth/email/account_confirmation.html:4
+#: chat/templates/auth/email/change_email.html:5
+#: chat/templates/auth/email/request_password_reset.html:5
+#: chat/templates/auth/login.html:11 chat/templates/auth/login.html:12
+#: chat/templates/auth/unconfirmed.html:10
+#: chat/templates/rooms/rooms_by_category.html:13
+msgid "here"
+msgstr "здесь"
+
+#: chat/templates/auth/login.html:11
+msgid "to create"
+msgstr "что бы создать"
+
+#: chat/templates/auth/login.html:12
+msgid "Forgot your password? Click"
+msgstr "Забыли свой пароль? Нажмите"
+
+#: chat/templates/auth/login.html:12
+msgid "to reset"
+msgstr "что бы сбросить его"
+
+#: chat/templates/auth/request_password_reset.html:3
+#: chat/templates/auth/request_password_reset.html:7
+msgid "Request password reset"
+msgstr "Запросить сброс пароля"
+
+#: chat/templates/auth/unconfirmed.html:3
+#: chat/templates/auth/unconfirmed.html:7
+msgid "Unconfirmed account"
+msgstr "Неподтвержденный аккаунт"
+
+#: chat/templates/auth/unconfirmed.html:8
+msgid ""
+"It's look like you don't confirm your account. Please read your email to "
+"see further steps."
+msgstr ""
+"Похоже, вы не подтвердили свой аккаунт. Пожалуйста, прочтите свою почту, "
+"чтобыузнать дальнейшие шаги."
+
+#: chat/templates/auth/unconfirmed.html:10
+msgid "Didn't recieve an email? Click"
+msgstr "Не получили письмо? Нажмите"
+
+#: chat/templates/auth/unconfirmed.html:10
+msgid "to resend."
+msgstr "что бы отправить его снова."
+
+#: chat/templates/auth/email/account_confirmation.html:1
+#: chat/templates/auth/email/change_email.html:1
+#: chat/templates/auth/email/request_password_reset.html:1
+msgid "Dear,"
+msgstr "Дорогой,"
+
+#: chat/templates/auth/email/account_confirmation.html:3
+msgid "Welcome to our community. We're very happy that you joined us."
+msgstr ""
+"Добро пожаловать в наше сообщество. Мы очень рады, что вы присоединились "
+"к нам."
+
+#: chat/templates/auth/email/account_confirmation.html:4
+msgid "To confirm your account please click"
+msgstr "Чтобы подтвердить свою учетную запись, нажмите"
+
+#: chat/templates/auth/email/account_confirmation.html:5
+msgid "Or you can paste following link into your browser:"
+msgstr "Или вы можете вставить следующую ссылку в ваш браузер:"
+
+#: chat/templates/auth/email/account_confirmation.html:7
+#: chat/templates/auth/email/change_email.html:8
+#: chat/templates/auth/email/request_password_reset.html:8
+msgid "Note: replies to this email are not monitored."
+msgstr "Примечание: ответы на этот имейл не отслеживаются."
+
+#: chat/templates/auth/email/change_email.html:3
+msgid "Please, confirm your email change."
+msgstr "Пожалуйста, подтвердите изменение адреса электронной почты."
+
+#: chat/templates/auth/email/change_email.html:4
+msgid "If you didn't request email change, ignore this message."
+msgstr ""
+"Если вы не запрашивали изменение адреса электронной почты, проигнорируйте"
+" это сообщение."
+
+#: chat/templates/auth/email/change_email.html:5
+msgid "To change your email click"
+msgstr "Чтобы изменить адрес электронной почты, нажмите"
+
+#: chat/templates/auth/email/change_email.html:6
+msgid "Or you can paste following link to your browser:"
+msgstr "Или вы можете вставить следующую ссылку в ваш браузер:"
+
+#: chat/templates/auth/email/request_password_reset.html:3
+msgid "This is mail for password request reset."
+msgstr "Это письмо для запроса сброса пароля."
+
+#: chat/templates/auth/email/request_password_reset.html:4
+msgid "if you didn't request password reset, ignore this mail."
+msgstr "Если вы не запрашивали сброс пароля, проигнорируйте это письмо."
+
+#: chat/templates/auth/email/request_password_reset.html:5
+msgid "To reset your password click"
+msgstr "Чтобы сбросить пароль, нажмите"
+
+#: chat/templates/auth/email/request_password_reset.html:6
+msgid "Or you van paste following link in yout browser:"
+msgstr "Или вы можете вставить следующую ссылку в браузере:"
+
+#: chat/templates/components/_navbar.html:9
+msgid "Explore"
+msgstr "Исследовать"
+
+#: chat/templates/components/_navbar.html:13
+#: chat/templates/users/user_page.html:4
+msgid "Profile"
+msgstr "Профиль"
+
+#: chat/templates/components/_navbar.html:17
+msgid "Search"
+msgstr "Поиск"
+
+#: chat/templates/components/_navbar.html:30
+msgid "Account"
+msgstr "Аккаунт"
+
+#: chat/templates/components/_navbar.html:35
+msgid "Logout"
+msgstr "Выйти"
+
+#: chat/templates/components/_room_desc.html:11
+#: chat/templates/components/_room_no_category.html:11
+#: chat/templates/rooms/room.html:22
+msgid "Join Room"
+msgstr "Присоединиться к комнате"
+
+#: chat/templates/components/_room_desc.html:15
+#: chat/templates/components/_room_no_category.html:15
+msgid "room participant(s)"
+msgstr "участник(и) комнаты"
+
+#: chat/templates/components/_sidebar.html:1
+msgid "Topics"
+msgstr "Темы"
+
+#: chat/templates/components/_sidebar.html:3
+msgid "All"
+msgstr "Все"
+
+#: chat/templates/components/forms/_recaptcha.html:4
+msgid "Validate ReCaptcha to ensure that you are not a robot."
+msgstr "Подтвердите ReCaptcha, чтобы убедиться, что вы не робот."
+
+#: chat/templates/errors/400.html:3 chat/templates/errors/400.html:5
+msgid "Bad Request"
+msgstr "Неверный запрос"
+
+#: chat/templates/errors/400.html:6
+msgid "Your browser sent a request that server couldn't understand."
+msgstr "Ваш браузер отправил запрос, который сервер не смог понять."
+
+#: chat/templates/errors/403.html:3 chat/templates/errors/403.html:5
+msgid "Forbidden"
+msgstr "Запрещено"
+
+#: chat/templates/errors/403.html:6
+msgid "You don't have permission to access on this server."
+msgstr "У вас нет разрешения на доступ к этому серверу."
+
+#: chat/templates/errors/404.html:3 chat/templates/errors/404.html:5
+msgid "Page Not Found"
+msgstr "Страница не найдена"
+
+#: chat/templates/errors/404.html:6
+msgid "We're sorry, the page you requested couldn't be found."
+msgstr "К сожалению, запрошенная вами страница не найдена."
+
+#: chat/templates/errors/500.html:3 chat/templates/errors/500.html:5
+msgid "Internal Server Error"
+msgstr "Internal Server Error"
+
+#: chat/templates/errors/500.html:6
+msgid "This page isn't working. We'll fix this as soon as posible."
+msgstr ""
+"Эта страница не работает. Мы исправим это, как только это станет "
+"возможным."
+
+#: chat/templates/rooms/create_room.html:6
+msgid "Create room."
+msgstr "Создать комнату."
+
+#: chat/templates/rooms/room.html:14
+msgid "Hosted by:"
+msgstr "Создана:"
+
+#: chat/templates/rooms/room.html:37
+msgid "Note:"
+msgstr "Примечание:"
+
+#: chat/templates/rooms/room.html:37
+msgid "to join the conversation you have to login."
+msgstr "чтобы присоединиться к разговору, вы должны войти в систему."
+
+#: chat/templates/rooms/room.html:42
+msgid "Type your message here..."
+msgstr "Введите ваше сообщение здесь..."
+
+#: chat/templates/rooms/room.html:45
+msgid "Send message"
+msgstr "Отправить"
+
+#: chat/templates/rooms/room.html:51
+msgid "Participants"
+msgstr "Участники"
+
+#: chat/templates/rooms/rooms_by_category.html:4
+msgid "Rooms"
+msgstr "Комнаты"
+
+#: chat/templates/rooms/rooms_by_category.html:8
+msgid "Topic:"
+msgstr "Темы:"
+
+#: chat/templates/rooms/rooms_by_category.html:13
+msgid "No rooms with such category found. Click"
+msgstr "Номера с такой категорией не найдены. Нажмите"
+
+#: chat/templates/rooms/rooms_by_category.html:13
+msgid "to create."
+msgstr "что бы создать."
+
+#: chat/templates/rooms/rooms_by_category.html:15
+msgid "No rooms with such category found."
+msgstr "Номера с такой категорией не найдены."
+
+#: chat/templates/rooms/search.html:4
+msgid "search results"
+msgstr "результаты поиска"
+
+#: chat/templates/rooms/search.html:8
+msgid "Search results for"
+msgstr "Результаты поиска по запросу"
+
+#: chat/templates/rooms/search.html:11
+msgid "Nothing found for"
+msgstr "Ничего не найдено по запросу"
+
+#: chat/templates/users/edit_profile.html:3
+msgid "Edit"
+msgstr "Редактировать"
+
+#: chat/templates/users/edit_profile.html:7
+msgid "Edit profile."
+msgstr "Редактировать профиль."
+
+#: chat/templates/users/user_page.html:18
+msgid "Edit profile"
+msgstr "Редактировать профиль"
+
+#: chat/templates/users/user_page.html:25
+msgid "Last seen:"
+msgstr "В сети:"
+
+#: chat/templates/users/user_page.html:30 chat/users/forms.py:14
+msgid "About Me"
+msgstr "Обо мне"
+
+#: chat/templates/users/user_page.html:34
+msgid "User didn't specify any information."
+msgstr "Пользователь не указал никакой информации о себе."
+
+#: chat/templates/users/user_page.html:39
+msgid "Recently joined rooms:"
+msgstr "Комнаты, к которым пользователь недавно присоеденился:"
+
+#: chat/users/forms.py:13
+msgid "Full Name"
+msgstr "Полное имя"
+
+#: chat/users/forms.py:15
+msgid "Update"
+msgstr "Обновить"
+
+#: chat/users/views.py:38
+msgid "Profile info successfully updated."
+msgstr "Информация профиля успешно обновлена."
+

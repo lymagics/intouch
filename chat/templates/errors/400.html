@@ -1,0 +1,6 @@
+{% extends "errors/error_base.html" %}
+
+{% block error_title %}400 {{_("Bad Request")}}{% endblock %}
+
+{% block error_name %}400 {{_("Bad Request")}}.{% endblock %}
+{% block error_description %}{{_("Your browser sent a request that server couldn't understand.")}}{% endblock %}

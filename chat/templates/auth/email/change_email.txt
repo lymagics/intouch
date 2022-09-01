@@ -1,0 +1,7 @@
+{{_("Dear,")}} {{ user.username }}
+
+{{_("Please, confirm your email change.")}}
+{{_("If you didn't request email change, ignore this message.")}}
+{{_("To change your email click on the following link:")}} {{ url_for('auth.confirm_change_email', token=token) }}
+
+{{_("Note: replies to this email are not monitored.")}}

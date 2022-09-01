@@ -1,0 +1,6 @@
+{{_("Dear,")}} {{ user.username }}!
+
+{{_("Welcome to our community. We're very happy that you joined us.")}}
+{{_("To confirm your account please click on this link:")}} {{ url_for('auth.confirm', token=token, _external=True) }} 
+
+{{_("Note: replies to this email are not monitored.")}}

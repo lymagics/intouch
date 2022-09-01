@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}{% block error_title %}{% endblock %}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>{% block error_name %}{% endblock %}</h1>
+    <p>{% block error_description %}{% endblock %}</p>
+</div>
+{% endblock %}

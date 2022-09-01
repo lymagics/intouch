@@ -1,0 +1,7 @@
+<h1>{{_("Topics")}}</h1>
+<ul class="list-group">
+    <a class="normal-link" href="{{ url_for('main.index') }}"><li class="list-group-item">{{_("All")}} <span class="badge badge-secondary">{{ total_rooms }}</span></li></a>
+    {% for category in categories %}
+        <a class="normal-link" href="{{ url_for('rooms.room_category', category_id=category.category_id) }}"><li class="list-group-item">{{ category.name }} <span class="badge badge-secondary">{{ category.rooms.count() }}</span></li></a>
+    {% endfor %}
+</ul>

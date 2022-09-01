@@ -1,0 +1,14 @@
+# python cache 
+__pycache__
+
+# venv 
+venv 
+
+# sqlite files
+*.sqlite
+
+# vs code settings
+.vscode
+
+# flask environment variables
+.flaskenv

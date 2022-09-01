@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% from "macros.html" import pagination_widget %}
+
+{% block title %}{{ q }} - {{_("search results")}}{% endblock %}
+
+{% block content %}
+    {% if rooms[0] %}
+        <h1>{{_("Search results for")}} "{{ q }}".</h1>
+        {% include "components/_room_desc.html" %}
+    {% else %}
+        <h1>{{_("Nothing found for")}} "{{ q }}".</h1>
+    {% endif %}
+{% endblock %}
+
+{% block pagination %}
+    {% if pagination.items %}
+        {{ pagination_widget(pagination, "main.search") }}
+    {% endif %}
+{% endblock %}

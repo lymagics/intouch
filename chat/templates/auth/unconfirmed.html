@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}{{_("Unconfirmed account")}}{% endblock %}
+
+{% block content %}
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">{{_("Unconfirmed account")}}.</h4>
+        <p>{{_("It's look like you don't confirm your account. Please read your email to see further steps.")}}</p>
+        <hr>
+        <p class="mb-0">{{_("Didn't recieve an email? Click")}} <a href="{{ url_for('auth.resend_token') }}">{{_("here")}}</a> {{_("to resend.")}}</p>
+    </div>
+{% endblock %}

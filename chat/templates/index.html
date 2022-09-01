@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% from "macros.html" import pagination_widget %}
+
+{% block title %}InTouch{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {% if current_user.is_authenticated %}
+            <h1>{{_("Hello,")}} {{ current_user.username }}! 👋</h1>
+            <div class="card">
+                <div class="card-body">
+                    <h4>{{_("Want to create your own room?")}}</h4><a class="btn btn-outline-primary" href="{{ url_for('rooms.create_room') }}">{{_("Create Room")}}</a>
+                </div>
+            </div>
+        {% else %}
+            <h1>{{_("Hello, Stranger!")}} 👋</h1>
+        {% endif %} <br>
+        
+        {% include "components/_room_desc.html" %}
+    </div>
+{% endblock %}
+
+{% block pagination %}
+    {% if pagination.items %}
+        {{ pagination_widget(pagination, "main.index") }}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,7 @@
+<h1>{{_("Dear,")}} {{ user.username }}!</h1>
+
+<p>{{_("Welcome to our community. We're very happy that you joined us.")}}</p>
+<p>{{_("To confirm your account please click")}} <a href="{{ url_for('auth.confirm', token=token, _external=True) }}">{{_("here")}}</a>.</p>
+<p>{{_("Or you can paste following link into your browser:")}} {{ url_for('auth.confirm', token=token, _external=True) }}</p>
+
+<em>{{_("Note: replies to this email are not monitored.")}}</em>

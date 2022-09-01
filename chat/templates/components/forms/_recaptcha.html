@@ -1,0 +1,6 @@
+{{ form.recaptcha }}
+{% if form.recaptcha.errors %}
+    <div class="invalid-input">
+        <p>{{_("Validate ReCaptcha to ensure that you are not a robot.")}}</p>
+    </div>
+{% endif %}

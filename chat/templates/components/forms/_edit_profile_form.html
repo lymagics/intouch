@@ -1,0 +1,11 @@
+{% from "macros.html" import render_error %}
+
+<form method="POST">
+    {{ form.csrf_token }}
+    {{ form.name.label }} {{ form.name(class="form-control") }}
+    {{ render_error(form.name) }}
+
+    {{ form.about_me.label }} {{ form.about_me(class="form-control", rows="6") }}
+    {{ render_error(form.about_me) }} <br>
+    {{ form.submit(class="btn btn-primary") }}
+</form>

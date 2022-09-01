@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% from "macros.html" import construct_username %}
+{% from "macros.html" import render_participant %}
+
+{% block title %} {{ room.name }} {% endblock %}
+
+{% block content %}
+    <div class="conatiner">
+        <h2>{{ room.name }}</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>{{_("Hosted by:")}}</h5>
+                        <div class="rounded-img">
+                            <img src="{{ room.creator.gravatar_url(size=30) }}" alt="...">
+                            {{ construct_username(room.creator.username, 16) }}
+                        </div>
+                    </div>
+                    <div class="col-md-6" align="right">
+                        {% if current_user not in room.users %}
+                            <a class="btn btn-dark" href="{{ url_for('rooms.room_join', room_id=room.room_id) }}">{{_("Join Room")}}</a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="textarea">
+                            <div class="chat" id="chat">
+                                {% include "components/_messages.html" %}
+                            </div>
+                            <div id="last-message"></div>
+                        </div>
+                    </div>
+                </div>
+                {% if not current_user.is_authenticated %}
+                    <p><i>{{_("Note:")}}</i> {{_("to join the conversation you have to login.")}}</p>
+                {% endif %}
+                {% if current_user in room.users %}
+                    <div class="row mt-3">
+                        <div class="col-md-8">
+                            <input id="message" class="form-control" type="text" placeholder="{{_("Type your message here...")}}">
+                        </div>
+                        <div class="col-md-4">
+                            <button id="send-message" class="btn btn-primary">{{_("Send message")}}</button>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="col-md-4">
+                <h5>{{_("Participants")}}</h5>
+                {% for participant in room.users %}
+                    {{ render_participant(participant, 30) }}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='js/socketio.js') }}"></script>
+{% endblock %}

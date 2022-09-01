@@ -1,0 +1,499 @@
+# Ukrainian translations for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-08-31 21:09+0300\n"
+"PO-Revision-Date: 2022-08-31 17:47+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uk\n"
+"Language-Team: uk <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: chat/extensions.py:20
+msgid "Please log in to access this page."
+msgstr "Будь ласка, увійдіть, щоб отримати доступ до цієї сторінки."
+
+#: chat/auth/forms.py:18 chat/auth/forms.py:35
+msgid "Username"
+msgstr "Ім'я користувача"
+
+#: chat/auth/forms.py:19 chat/auth/forms.py:39
+msgid "Password"
+msgstr "Пароль"
+
+#: chat/auth/forms.py:20
+msgid "Remember me"
+msgstr "Запам'ятати мене"
+
+#: chat/auth/forms.py:22 chat/templates/auth/login.html:3
+#: chat/templates/auth/login.html:7 chat/templates/components/_navbar.html:24
+msgid "Login"
+msgstr "Увійти"
+
+#: chat/auth/forms.py:36
+msgid "Username should containonly letters, numbers, dots and underscores."
+msgstr "Ім'я користувача має містити лише літери, цифри, крапки та підкреслення."
+
+#: chat/auth/forms.py:38 chat/auth/forms.py:96
+msgid "Email"
+msgstr "Електронна пошта"
+
+#: chat/auth/forms.py:39 chat/auth/forms.py:66 chat/auth/forms.py:114
+msgid "Passwords must match."
+msgstr "Паролі мають збігатися."
+
+#: chat/auth/forms.py:40 chat/auth/forms.py:67 chat/auth/forms.py:115
+msgid "Repeat password"
+msgstr "Повторіть пароль"
+
+#: chat/auth/forms.py:42 chat/templates/auth/register.html:3
+#: chat/templates/auth/register.html:7
+msgid "Sign Up"
+msgstr "Зареєструватися"
+
+#: chat/auth/forms.py:48
+msgid "User with such username already exists."
+msgstr "Користувач із таким іменем уже існує."
+
+#: chat/auth/forms.py:53 chat/auth/forms.py:86
+msgid "Email already in use."
+msgstr "E-mail вже використовується."
+
+#: chat/auth/forms.py:65
+msgid "Old password"
+msgstr "Старий пароль"
+
+#: chat/auth/forms.py:66 chat/auth/forms.py:114
+msgid "New password"
+msgstr "New password"
+
+#: chat/auth/forms.py:69 chat/templates/auth/change_password.html:3
+#: chat/templates/auth/change_password.html:7
+#: chat/templates/components/_navbar.html:33
+msgid "Change password"
+msgstr "Змінити пароль"
+
+#: chat/auth/forms.py:79
+msgid "New email"
+msgstr "Нова електронна пошта"
+
+#: chat/auth/forms.py:81 chat/auth/views.py:154
+#: chat/templates/auth/change_email.html:3
+#: chat/templates/auth/change_email.html:7
+#: chat/templates/components/_navbar.html:34
+msgid "Change email"
+msgstr "Змінити електронну адресу"
+
+#: chat/auth/forms.py:98
+msgid "Request reset"
+msgstr "Скинути пароль"
+
+#: chat/auth/forms.py:103
+msgid "Acount with such email not found."
+msgstr "Обліковий запис із такою електронною адресою не знайдено."
+
+#: chat/auth/forms.py:117 chat/auth/views.py:188
+#: chat/templates/auth/reset_password.html:3
+#: chat/templates/auth/reset_password.html:7
+msgid "Reset password"
+msgstr "Скинути пароль"
+
+#: chat/auth/views.py:42
+msgid "Invalid username or password"
+msgstr "Неправильне ім'я користувача або пароль"
+
+#: chat/auth/views.py:64 chat/auth/views.py:117
+msgid "Account confirmation"
+msgstr "Підтвердження облікового запису"
+
+#: chat/auth/views.py:65
+msgid "Thank you for creating account!"
+msgstr "Дякуємо за створення облікового запису!"
+
+#: chat/auth/views.py:78
+msgid "You have been logged out."
+msgstr "Ви вийшли з системи."
+
+#: chat/auth/views.py:103
+msgid "Your account successfully confirmed!"
+msgstr "Ваш обліковий запис успішно підтверджено!"
+
+#: chat/auth/views.py:118
+msgid "An email with confirmation token has been sent to you."
+msgstr "Вам надіслано електронний лист із маркером підтвердження."
+
+#: chat/auth/views.py:136 chat/auth/views.py:207
+msgid "Your password has been changed."
+msgstr "Ваш пароль був змінений."
+
+#: chat/auth/views.py:138
+msgid "Invalid old password."
+msgstr "Недійсний старий пароль."
+
+#: chat/auth/views.py:155
+msgid "Instruction to change email has been sent to you."
+msgstr "Вам надіслано інструкцію щодо зміни електронної пошти."
+
+#: chat/auth/views.py:169
+msgid "Your email successfully has been changed."
+msgstr "Вашу електронну адресу успішно змінено."
+
+#: chat/auth/views.py:171
+msgid "Invalid email change token."
+msgstr "Недійсний маркер зміни електронної пошти."
+
+#: chat/auth/views.py:189
+msgid "Instruction to reset password has been sent to you."
+msgstr "Вам надіслано інструкцію щодо скидання пароля."
+
+#: chat/auth/views.py:209
+msgid "Invalid reset token."
+msgstr "Недійсний маркер скидання пароля."
+
+#: chat/rooms/forms.py:17
+msgid "Room name"
+msgstr "Назва кімнати"
+
+#: chat/rooms/forms.py:18
+msgid "What is this group about?"
+msgstr "Про що ця група?"
+
+#: chat/rooms/forms.py:19
+msgid "Category"
+msgstr "Категорія"
+
+#: chat/rooms/forms.py:20 chat/templates/rooms/create_room.html:3
+msgid "Create room"
+msgstr "Створити кімнату"
+
+#: chat/rooms/views.py:28
+msgid "Room successfully created."
+msgstr "Кімнату успішно створено."
+
+#: chat/rooms/views.py:56
+#, python-format
+msgid "You have joined %(room)s."
+msgstr "Ви приєдналися до %(room)s."
+
+#: chat/templates/index.html:9
+msgid "Hello,"
+msgstr "Привіт,"
+
+#: chat/templates/index.html:12
+msgid "Want to create your own room?"
+msgstr "Хочете створити власну кімнату?"
+
+#: chat/templates/index.html:12
+msgid "Create Room"
+msgstr "Створити кімнату"
+
+#: chat/templates/index.html:16
+msgid "Hello, Stranger!"
+msgstr "Привіт, незнайомцю!"
+
+#: chat/templates/macros.html:34 chat/templates/macros.html:36
+msgid "Previous"
+msgstr "<"
+
+#: chat/templates/macros.html:50 chat/templates/macros.html:52
+msgid "Next"
+msgstr ">"
+
+#: chat/templates/auth/login.html:11
+msgid "Don't have an account? Click"
+msgstr "Немає облікового запису? Натисніть"
+
+#: chat/templates/auth/email/account_confirmation.html:4
+#: chat/templates/auth/email/change_email.html:5
+#: chat/templates/auth/email/request_password_reset.html:5
+#: chat/templates/auth/login.html:11 chat/templates/auth/login.html:12
+#: chat/templates/auth/unconfirmed.html:10
+#: chat/templates/rooms/rooms_by_category.html:13
+msgid "here"
+msgstr "тут"
+
+#: chat/templates/auth/login.html:11
+msgid "to create"
+msgstr "щоб створити"
+
+#: chat/templates/auth/login.html:12
+msgid "Forgot your password? Click"
+msgstr "Забули свій пароль? Натисніть"
+
+#: chat/templates/auth/login.html:12
+msgid "to reset"
+msgstr "щоб скинути"
+
+#: chat/templates/auth/request_password_reset.html:3
+#: chat/templates/auth/request_password_reset.html:7
+msgid "Request password reset"
+msgstr "Запит на скидання пароля"
+
+#: chat/templates/auth/unconfirmed.html:3
+#: chat/templates/auth/unconfirmed.html:7
+msgid "Unconfirmed account"
+msgstr "Непідтверджений обліковий запис"
+
+#: chat/templates/auth/unconfirmed.html:8
+msgid ""
+"It's look like you don't confirm your account. Please read your email to "
+"see further steps."
+msgstr ""
+"Схоже, ви не підтвердили свій обліковий запис. Прочитайте свою електронну"
+" пошту, щобподивіться подальші кроки."
+
+#: chat/templates/auth/unconfirmed.html:10
+msgid "Didn't recieve an email? Click"
+msgstr "Не отримали електронного листа? Натисніть"
+
+#: chat/templates/auth/unconfirmed.html:10
+msgid "to resend."
+msgstr "щоб відправити його знову."
+
+#: chat/templates/auth/email/account_confirmation.html:1
+#: chat/templates/auth/email/change_email.html:1
+#: chat/templates/auth/email/request_password_reset.html:1
+msgid "Dear,"
+msgstr "Шановний,"
+
+#: chat/templates/auth/email/account_confirmation.html:3
+msgid "Welcome to our community. We're very happy that you joined us."
+msgstr ""
+"Ласкаво просимо до нашої спільноти. Ми дуже раді, що ви приєдналися до "
+"нас."
+
+#: chat/templates/auth/email/account_confirmation.html:4
+msgid "To confirm your account please click"
+msgstr "Щоб підтвердити свій обліковий запис, натисніть"
+
+#: chat/templates/auth/email/account_confirmation.html:5
+msgid "Or you can paste following link into your browser:"
+msgstr "Або ви можете вставити наступне посилання у свій браузер:"
+
+#: chat/templates/auth/email/account_confirmation.html:7
+#: chat/templates/auth/email/change_email.html:8
+#: chat/templates/auth/email/request_password_reset.html:8
+msgid "Note: replies to this email are not monitored."
+msgstr "Примітка: відповіді на цей лист не відстежуються."
+
+#: chat/templates/auth/email/change_email.html:3
+msgid "Please, confirm your email change."
+msgstr "Будь ласка, підтвердьте зміну електронної пошти."
+
+#: chat/templates/auth/email/change_email.html:4
+msgid "If you didn't request email change, ignore this message."
+msgstr ""
+"Якщо ви не надсилали запит на зміну електронної адреси, проігноруйте це "
+"повідомлення."
+
+#: chat/templates/auth/email/change_email.html:5
+msgid "To change your email click"
+msgstr "Щоб змінити адресу електронної пошти, натисніть"
+
+#: chat/templates/auth/email/change_email.html:6
+msgid "Or you can paste following link to your browser:"
+msgstr "Або ви можете вставити наступне посилання у свій браузер:"
+
+#: chat/templates/auth/email/request_password_reset.html:3
+msgid "This is mail for password request reset."
+msgstr "Це лист для запиту на скидання пароля."
+
+#: chat/templates/auth/email/request_password_reset.html:4
+msgid "if you didn't request password reset, ignore this mail."
+msgstr "Якщо ви не надсилали запит на зміну пароля, проігноруйте це повідомлення."
+
+#: chat/templates/auth/email/request_password_reset.html:5
+msgid "To reset your password click"
+msgstr "Щоб скинути пароль, натисніть"
+
+#: chat/templates/auth/email/request_password_reset.html:6
+msgid "Or you van paste following link in yout browser:"
+msgstr "Або вставте таке посилання у свій браузер:"
+
+#: chat/templates/components/_navbar.html:9
+msgid "Explore"
+msgstr "Досліджуйте"
+
+#: chat/templates/components/_navbar.html:13
+#: chat/templates/users/user_page.html:4
+msgid "Profile"
+msgstr "Профіль"
+
+#: chat/templates/components/_navbar.html:17
+msgid "Search"
+msgstr "Пошук"
+
+#: chat/templates/components/_navbar.html:30
+msgid "Account"
+msgstr "Обліковий запис"
+
+#: chat/templates/components/_navbar.html:35
+msgid "Logout"
+msgstr "Вийти"
+
+#: chat/templates/components/_room_desc.html:11
+#: chat/templates/components/_room_no_category.html:11
+#: chat/templates/rooms/room.html:22
+msgid "Join Room"
+msgstr "Приєднатися до кімнати"
+
+#: chat/templates/components/_room_desc.html:15
+#: chat/templates/components/_room_no_category.html:15
+msgid "room participant(s)"
+msgstr "учасник(и) кімнати"
+
+#: chat/templates/components/_sidebar.html:1
+msgid "Topics"
+msgstr "Теми"
+
+#: chat/templates/components/_sidebar.html:3
+msgid "All"
+msgstr "Всі"
+
+#: chat/templates/components/forms/_recaptcha.html:4
+msgid "Validate ReCaptcha to ensure that you are not a robot."
+msgstr "Пройдіть ReCaptcha, щоб переконатися, що ви не робот."
+
+#: chat/templates/errors/400.html:3 chat/templates/errors/400.html:5
+msgid "Bad Request"
+msgstr "Неправильний запит"
+
+#: chat/templates/errors/400.html:6
+msgid "Your browser sent a request that server couldn't understand."
+msgstr "Ваш браузер надіслав запит, який сервер не зміг зрозуміти."
+
+#: chat/templates/errors/403.html:3 chat/templates/errors/403.html:5
+msgid "Forbidden"
+msgstr "Заборонено"
+
+#: chat/templates/errors/403.html:6
+msgid "You don't have permission to access on this server."
+msgstr "Ви не маєте дозволу на доступ до цього сервера."
+
+#: chat/templates/errors/404.html:3 chat/templates/errors/404.html:5
+msgid "Page Not Found"
+msgstr "Сторінку не знайдено"
+
+#: chat/templates/errors/404.html:6
+msgid "We're sorry, the page you requested couldn't be found."
+msgstr "На жаль, сторінку, яку ви запитували, не вдалося знайти."
+
+#: chat/templates/errors/500.html:3 chat/templates/errors/500.html:5
+msgid "Internal Server Error"
+msgstr "Внутрішня помилка сервера"
+
+#: chat/templates/errors/500.html:6
+msgid "This page isn't working. We'll fix this as soon as posible."
+msgstr "Ця сторінка не працює. Ми виправимо це якомога швидше."
+
+#: chat/templates/rooms/create_room.html:6
+msgid "Create room."
+msgstr "Створити кімнату."
+
+#: chat/templates/rooms/room.html:14
+msgid "Hosted by:"
+msgstr "Створена:"
+
+#: chat/templates/rooms/room.html:37
+msgid "Note:"
+msgstr "Примітка:"
+
+#: chat/templates/rooms/room.html:37
+msgid "to join the conversation you have to login."
+msgstr "щоб приєднатися до розмови, вам потрібно авторизуватися."
+
+#: chat/templates/rooms/room.html:42
+msgid "Type your message here..."
+msgstr "Введіть своє повідомлення тут..."
+
+#: chat/templates/rooms/room.html:45
+msgid "Send message"
+msgstr "Надіслати"
+
+#: chat/templates/rooms/room.html:51
+msgid "Participants"
+msgstr "Учасники"
+
+#: chat/templates/rooms/rooms_by_category.html:4
+msgid "Rooms"
+msgstr "Кімнати"
+
+#: chat/templates/rooms/rooms_by_category.html:8
+msgid "Topic:"
+msgstr "Теми:"
+
+#: chat/templates/rooms/rooms_by_category.html:13
+msgid "No rooms with such category found. Click"
+msgstr "Кімнати такої категорії не знайдено. Натисніть"
+
+#: chat/templates/rooms/rooms_by_category.html:13
+msgid "to create."
+msgstr "щоб створити."
+
+#: chat/templates/rooms/rooms_by_category.html:15
+msgid "No rooms with such category found."
+msgstr "Кімнати такої категорії не знайдено."
+
+#: chat/templates/rooms/search.html:4
+msgid "search results"
+msgstr "результати пошуку"
+
+#: chat/templates/rooms/search.html:8
+msgid "Search results for"
+msgstr "Результати пошуку за запитом"
+
+#: chat/templates/rooms/search.html:11
+#, fuzzy
+msgid "Nothing found for"
+msgstr "Нотування знайдено за запитом"
+
+#: chat/templates/users/edit_profile.html:3
+msgid "Edit"
+msgstr "Редагувати"
+
+#: chat/templates/users/edit_profile.html:7
+msgid "Edit profile."
+msgstr "Редагувати профіль."
+
+#: chat/templates/users/user_page.html:18
+msgid "Edit profile"
+msgstr "Редагувати профіль"
+
+#: chat/templates/users/user_page.html:25
+msgid "Last seen:"
+msgstr "Онлайн:"
+
+#: chat/templates/users/user_page.html:30 chat/users/forms.py:14
+msgid "About Me"
+msgstr "Про мене"
+
+#: chat/templates/users/user_page.html:34
+msgid "User didn't specify any information."
+msgstr "Користувач не вказав жодної інформації."
+
+#: chat/templates/users/user_page.html:39
+msgid "Recently joined rooms:"
+msgstr "Кімнати, до яких користувач нещодавно приєднався:"
+
+#: chat/users/forms.py:13
+msgid "Full Name"
+msgstr "Повне ім'я"
+
+#: chat/users/forms.py:15
+msgid "Update"
+msgstr "Оновити"
+
+#: chat/users/views.py:38
+msgid "Profile info successfully updated."
+msgstr "Інформацію профілю успішно оновлено."
+

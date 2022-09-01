@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}{{_("Create room")}}{% endblock %}
+
+{% block content %}
+    <h1>{{_("Create room.")}}</h1>
+    <div class="conatiner">
+        <div class="row">
+            <div class="col-md-6">
+                {% include "components/forms/_create_room_form.html" %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends "errors/error_base.html" %}
+
+{% block error_title %}403 {{_("Forbidden")}}{% endblock %}
+
+{% block error_name %}403 {{_("Forbidden")}}.{% endblock %}
+{% block error_description %}{{_("You don't have permission to access on this server.")}}{% endblock %}

@@ -1,0 +1,8 @@
+<h1>{{_("Dear,")}} {{ user.username }}</h1>
+
+<p>{{_("Please, confirm your email change.")}}</p>
+<p>{{_("If you didn't request email change, ignore this message.")}}</p>
+<p>{{_("To change your email click")}} <a href="{{ url_for('auth.confirm_change_email', token=token, _external=True) }}">{{_("here")}}</a>.</p>
+<p>{{_("Or you can paste following link to your browser:")}} {{ url_for('auth.confirm_change_email', token=token, _external=True) }}</p>
+
+<em>{{_("Note: replies to this email are not monitored.")}}</em>

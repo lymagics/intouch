@@ -1,0 +1,6 @@
+{% extends "errors/error_base.html" %}
+
+{% block error_title %}500 {{_("Internal Server Error")}}{% endblock %}
+
+{% block error_name %}500 {{_("Internal Server Error")}}.{% endblock %}
+{% block error_description %}{{_("This page isn't working. We'll fix this as soon as posible.")}}{% endblock %}
